@@ -1,0 +1,11 @@
+$GITIGNORE = @'
+target/
+*.jar
+*.class
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.mvn/wrapper/maven-wrapper.jar
+'@

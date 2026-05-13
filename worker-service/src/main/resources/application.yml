@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: worker-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/booker
+    username: booker_app
+    password: ${DB_PASSWORD:booker_dev_password}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    open-in-view: false
+
+server:
+  port: 8084
+
+logging:
+  level:
+    com.malek.worker_service: INFO
